@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {
-      "InMemoryRepositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
-        }
-      }
-    }
+    "net9.0": {}
   },
-  "libraries": {
-    "InMemoryRepositories/1.0.0": {
-      "type": "project",
-      "path": "../InMemoryRepositories/InMemoryRepositories.csproj",
-      "msbuildProject": "../InMemoryRepositories/InMemoryRepositories.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": [
-      "InMemoryRepositories >= 1.0.0"
-    ]
+    "net9.0": []
   },
   "packageFolders": {
     "C:\\Users\\roman\\.nuget\\packages\\": {}
@@ -50,11 +31,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {
-            "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj": {
-              "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

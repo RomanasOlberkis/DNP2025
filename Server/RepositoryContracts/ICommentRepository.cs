@@ -3,7 +3,7 @@ using Entities;
 
 namespace RepositoryContracts;
 
-public interface ICommentRepositry
+public interface ICommentRepository
 {
     Task<Comment> AddAsync(Comment comment);
     Task UpdateAsync(Comment comment);

@@ -3,7 +3,7 @@ using Entities;
 
 namespace RepositoryContracts;
 
-public interface IPostRepositry
+public interface IPostRepository
 {
     Task<Post> AddAsync(Post post);
     Task UpdateAsync(Post post);

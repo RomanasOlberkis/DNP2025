@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "RepositoryContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "RepositoryContracts/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryContracts/RepositoryContracts.csproj",
+      "msbuildProject": "../RepositoryContracts/RepositoryContracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "RepositoryContracts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\roman\\.nuget\\packages\\": {}
@@ -31,7 +68,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

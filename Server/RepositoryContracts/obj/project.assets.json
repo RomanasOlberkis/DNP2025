@@ -5,24 +5,11 @@
       "Entities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "InMemoryRepositories": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Entities.dll": {}
         },
         "runtime": {
           "bin/placeholder/Entities.dll": {}
-        }
-      },
-      "InMemoryRepositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v9.0",
-        "compile": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/InMemoryRepositories.dll": {}
         }
       }
     }
@@ -32,17 +19,11 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
-    },
-    "InMemoryRepositories/1.0.0": {
-      "type": "project",
-      "path": "../InMemoryRepositories/InMemoryRepositories.csproj",
-      "msbuildProject": "../InMemoryRepositories/InMemoryRepositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Entities >= 1.0.0",
-      "InMemoryRepositories >= 1.0.0"
+      "Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -72,9 +53,6 @@
           "projectReferences": {
             "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
-            },
-            "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj": {
-              "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj"
             }
           }
         }
