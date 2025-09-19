@@ -1,6 +1,6 @@
 using System;
 using RepositoryContracts;
-using Entities; // Add this if Post is in DomainModels namespace
+using Entities;
 
 namespace CLI.UI;
 
@@ -40,7 +40,7 @@ public class ViewPostsView
         Console.WriteLine("Posts:");
         for (int i = 0; i < posts.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. {posts[i].Title}"); // Display ID and Title
+            Console.WriteLine($"{i + 1}. {posts[i].Title}");
         }
 
         Console.Write("Enter the number of the post to view details: ");
@@ -48,7 +48,7 @@ public class ViewPostsView
 
         if (int.TryParse(choice, out int postIndex) && postIndex > 0 && postIndex <= posts.Count)
         {
-            var selectedPost = posts[postIndex - 1]; // Get the selected post
+            var selectedPost = posts[postIndex - 1]; 
             Console.WriteLine($"\nTitle: {selectedPost.Title}");
             Console.WriteLine($"Content: {selectedPost.Body}");
         }

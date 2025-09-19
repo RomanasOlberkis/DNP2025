@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 public class Program
 {
-    public static async Task Main(string[] args) // Corrected Main method
+    public static async Task Main(string[] args)
     {
         Console.WriteLine("CLI App is starting...");
 
@@ -19,7 +19,7 @@ public class Program
 
         try
         {
-            await cliApp.RunAsync(); // Assuming you have a RunAsync method in CliApp
+            await cliApp.RunAsync();
         }
         catch (Exception ex)
         {
