@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {}
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Nevron Software\\Nevron Open Vision 2022.2\\NugetPackage"
+        ],
         "configFilePaths": [
-          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\NevronOpenVision.22.6.29.12.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -59,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
