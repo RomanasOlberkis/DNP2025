@@ -45,7 +45,7 @@ public class UserFileRepository : IUserRepository
         User? userToRemove = users.SingleOrDefault(u => u.Id == id);
         if (userToRemove is null)
         {
-            throw new InvalidOperationException($"User with ID '{user.Id}' was not found in user list");
+            throw new InvalidOperationException($"User with ID '{id}' was not found in user list");
         }
         users.Remove(userToRemove);
         await SaveUsersAsync(users);
@@ -57,7 +57,7 @@ public class UserFileRepository : IUserRepository
         User? user = users.SingleOrDefault(u => u.Id == id);
         if (user is null)
         {
-            throw new InvalidOperationException($"User with ID '{user.Id}' was not found in user list");
+            throw new InvalidOperationException($"User with ID '{id}' was not found in user list");
         }
         return user;
     }

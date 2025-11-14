@@ -1,14 +1,19 @@
-using FileRepositories;
 using RepositoryContracts;
-using CLI.UI;
 
-IUserRepository userRepo = new UserFileRepository();
-IPostRepository postRepo = new PostFileRepository();
-ICommentRepository commentRepo = new CommentFileRepository();
+namespace CLI.UI;
 
-CliApp app = new CliApp(userRepo, postRepo, commentRepo);
-await app.StartAsync();
-/*
+public class CliApp
+{
+    private readonly IUserRepository userRepo;
+    private readonly IPostRepository postRepo;
+    private readonly ICommentRepository commentRepo;
+
+    public CliApp(IUserRepository userRepo, IPostRepository postRepo, ICommentRepository commentRepo)
+    {
+        this.userRepo = userRepo;
+        this.postRepo = postRepo;
+        this.commentRepo = commentRepo;
+    }
     public async Task StartAsync()
     {
         while (true)
@@ -56,4 +61,4 @@ await app.StartAsync();
         ManageCommentsView view = new ManageCommentsView(commentRepo, postRepo, userRepo);
         await view.ShowAsync();
     }
-}*/
+}

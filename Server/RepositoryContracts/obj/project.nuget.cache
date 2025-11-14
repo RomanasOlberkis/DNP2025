@@ -1,19 +1,12 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "d4PvN5GChqw=",
+  "dgSpecHash": "lJbnxFuvWeg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
+  "projectFilePath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.11\\microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.11\\microsoft.windowsdesktop.app.ref.9.0.11.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.11\\microsoft.aspnetcore.app.ref.9.0.11.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "9x7uXIzZMss=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
-  "expectedPackageFiles": [],
->>>>>>> d843d0cd035209c7cdb630800bf0977a6d0fd991
   "logs": []
 }

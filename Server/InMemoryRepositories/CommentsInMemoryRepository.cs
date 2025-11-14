@@ -25,7 +25,7 @@ public class CommentInMemoryRepository : ICommentRepository
         Comment? existingComment = comments.SingleOrDefault(c => c.Id == comment.Id);
         if (existingComment is null)
         {
-            throw new InvalidOperationException($"Comment with this ID: '{id}' not found in among the users on this very specific beutiful site");
+            throw new InvalidOperationException($"Comment with this ID: '{comment.Id}' not found in among the users on this very specific beutiful site");
         }
         comments.Remove(existingComment);
         comments.Add(comment);

@@ -1,0 +1,23 @@
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.AssemblyInfoInputs.cache
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.AssemblyInfo.cs
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.csproj.CoreCompileInputs.cache
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.sourcelink.json
+C:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\bin\Debug\net9.0\InMemoryRepositories.deps.json
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\bin\Debug\net9.0\InMemoryRepositories.dll
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\bin\Debug\net9.0\InMemoryRepositories.pdb
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\bin\Debug\net9.0\Entities.dll
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\bin\Debug\net9.0\RepositoryContracts.dll
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\bin\Debug\net9.0\Entities.pdb
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\bin\Debug\net9.0\RepositoryContracts.pdb
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.csproj.AssemblyReference.cache
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.AssemblyInfoInputs.cache
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.AssemblyInfo.cs
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.csproj.CoreCompileInputs.cache
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.sourcelink.json
+C:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemory.C4D1EAE1.Up2Date
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.dll
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\refint\InMemoryRepositories.dll
+c:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\InMemoryRepositories.pdb
+C:\Users\roman\Documents\DNP\Assingment\Server\InMemoryRepositories\obj\Debug\net9.0\ref\InMemoryRepositories.dll

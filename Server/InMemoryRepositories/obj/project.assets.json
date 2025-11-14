@@ -1,33 +1,64 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "RepositoryContracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RepositoryContracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "RepositoryContracts/1.0.0": {
+      "type": "project",
+      "path": "../RepositoryContracts/RepositoryContracts.csproj",
+      "msbuildProject": "../RepositoryContracts/RepositoryContracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-<<<<<<< HEAD
     "net9.0": [
       "Entities >= 1.0.0",
       "RepositoryContracts >= 1.0.0"
     ]
-=======
-    "net9.0": []
->>>>>>> d843d0cd035209c7cdb630800bf0977a6d0fd991
   },
   "packageFolders": {
-    "C:\\Users\\Roman\\.nuget\\packages\\": {}
+    "C:\\Users\\roman\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj",
+      "projectUniqueName": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj",
       "projectName": "InMemoryRepositories",
-      "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj",
-      "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\InMemoryRepositories\\obj\\",
+      "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj",
+      "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -38,18 +69,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-<<<<<<< HEAD
           "projectReferences": {
-            "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
+            "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+              "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
             },
-            "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
-              "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
+            "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
             }
           }
-=======
-          "projectReferences": {}
->>>>>>> d843d0cd035209c7cdb630800bf0977a6d0fd991
         }
       },
       "warningProperties": {
@@ -97,11 +124,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
->>>>>>> d843d0cd035209c7cdb630800bf0977a6d0fd991
       }
     }
   }

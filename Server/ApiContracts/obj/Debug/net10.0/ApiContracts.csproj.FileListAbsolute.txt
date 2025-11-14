@@ -1,0 +1,12 @@
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\bin\Debug\net10.0\ApiContracts.deps.json
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\bin\Debug\net10.0\ApiContracts.dll
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\bin\Debug\net10.0\ApiContracts.pdb
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ApiContracts.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ApiContracts.AssemblyInfoInputs.cache
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ApiContracts.AssemblyInfo.cs
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ApiContracts.csproj.CoreCompileInputs.cache
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ApiContracts.sourcelink.json
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ApiContracts.dll
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\refint\ApiContracts.dll
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ApiContracts.pdb
+c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\ApiContracts\obj\Debug\net10.0\ref\ApiContracts.dll
