@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj": {}
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\CLI\\CLI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj": {
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\CLI\\CLI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj",
+        "projectUniqueName": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\CLI\\CLI.csproj",
         "projectName": "CLI",
-        "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj",
-        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\CLI\\obj\\",
+        "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\CLI\\CLI.csproj",
+        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\CLI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,14 +26,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
+              "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj": {
+                "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj"
               },
-              "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj": {
-                "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\InMemoryRepositories\\InMemoryRepositories.csproj"
-              },
-              "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
-                "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
+              "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
               }
             }
           }
@@ -87,21 +84,94 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+>>>>>>> d843d0cd035209c7cdb630800bf0977a6d0fd991
         }
       }
     },
-    "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
-        "projectName": "Entities",
-        "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\Entities\\obj\\",
+        "projectUniqueName": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj",
+        "projectName": "FileRepositories",
+        "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj",
+        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Nevron Software\\Nevron Open Vision 2022.2\\NugetPackage"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\NevronOpenVision.22.6.29.12.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectName": "RepositoryContracts",
+        "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
+        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\RepositoryContracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -160,6 +230,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
@@ -318,6 +389,9 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+>>>>>>> d843d0cd035209c7cdb630800bf0977a6d0fd991
         }
       }
     }

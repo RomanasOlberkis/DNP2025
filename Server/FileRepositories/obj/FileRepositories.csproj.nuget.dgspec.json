@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {}
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj": {}
   },
   "projects": {
-    "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {
+    "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj",
+        "projectUniqueName": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj",
         "projectName": "FileRepositories",
-        "projectPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj",
-        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\OneDrive - ViaUC\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\obj\\",
+        "projectPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\FileRepositories.csproj",
+        "packagesPath": "C:\\Users\\Roman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roman\\Documents\\DNP\\DNP2025\\Server\\FileRepositories\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Nevron Software\\Nevron Open Vision 2022.2\\NugetPackage"
+        ],
         "configFilePaths": [
-          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\NevronOpenVision.22.6.29.12.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -43,6 +47,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -73,7 +83,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+>>>>>>> d843d0cd035209c7cdb630800bf0977a6d0fd991
         }
       }
     }
