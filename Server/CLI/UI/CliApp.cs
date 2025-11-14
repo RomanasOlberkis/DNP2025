@@ -1,58 +1,65 @@
-using System;
-using System.Threading.Tasks;
 using RepositoryContracts;
-using Entities;
-using CLI.UI;
+
+namespace CLI.UI;
 
 public class CliApp
 {
-    private readonly IUserRepository _userRepository;
-    private readonly ICommentRepository _commentRepository;
-    private readonly IPostRepository _postRepository;
+    private readonly IUserRepository userRepo;
+    private readonly IPostRepository postRepo;
+    private readonly ICommentRepository commentRepo;
 
-    public CliApp(
-        IUserRepository userRepository,
-        ICommentRepository commentRepository,
-        IPostRepository postRepository)
+    public CliApp(IUserRepository userRepo, IPostRepository postRepo, ICommentRepository commentRepo)
     {
-        _userRepository = userRepository;
-        _commentRepository = commentRepository;
-        _postRepository = postRepository;
+        this.userRepo = userRepo;
+        this.postRepo = postRepo;
+        this.commentRepo = commentRepo;
     }
 
-    public async Task<Task> RunAsync()
+    public async Task StartAsync()
     {
-        Console.WriteLine("Running");
-        bool running = true;
-
-        while (running)
+        while (true)
         {
-            Console.WriteLine("......");
-            Console.WriteLine("1 view post");
-            Console.WriteLine("2 comment");
-            Console.WriteLine("3 Exit");
+            Console.WriteLine("write 1 to maanage users");
+            Console.WriteLine("write 2 to make a post");
+            Console.WriteLine(" write 3 for comments");
+            Console.WriteLine("0 to exit the application");
 
             string? choice = Console.ReadLine();
-
             switch (choice)
             {
                 case "1":
-                    var viewPostsView = new ViewPostsView(_postRepository);
-                    await viewPostsView.ViewPostsAsync();
+                    await ManageUsersAsync();
                     break;
                 case "2":
-                    Console.WriteLine("comment");
+                    await ManagePostsAsync();
                     break;
                 case "3":
-                    running = false;
-                    Console.WriteLine("Exit");
+                    await ManageCommentsAsync();
                     break;
+                case "0":
+                    return;
                 default:
-                    Console.WriteLine("Invalid");
+                    Console.WriteLine("Invalid option");
                     break;
             }
         }
+    }
 
-        return Task.CompletedTask;
+    private async Task ManageUsersAsync()
+    {
+        ManageUsersView view = new ManageUsersView(userRepo);
+        await view.ShowAsync();
+    }
+
+    private async Task ManagePostsAsync()
+    {
+        ManagePostsView view = new ManagePostsView(postRepo, userRepo);
+        await view.ShowAsync();
+    }
+
+    private async Task ManageCommentsAsync()
+    {
+        ManageCommentsView view = new ManageCommentsView(commentRepo, postRepo, userRepo);
+        await view.ShowAsync();
     }
 }
