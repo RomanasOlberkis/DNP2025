@@ -70,8 +70,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
-              "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
+            "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
             },
             "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
               "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"

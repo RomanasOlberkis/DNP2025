@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+    "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -99,8 +99,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
-                "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
+              "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
               },
               "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
                 "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
@@ -185,8 +185,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
-                "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
+              "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
               }
             }
           }
@@ -313,14 +313,14 @@
         }
       }
     },
-    "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Shared\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"

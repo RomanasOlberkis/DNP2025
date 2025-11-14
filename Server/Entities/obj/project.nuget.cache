@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Glj4+StdV08=",
+  "dgSpecHash": "OumaFsxnHrI=",
   "success": true,
-  "projectFilePath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.11\\microsoft.netcore.app.ref.9.0.11.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.11\\microsoft.windowsdesktop.app.ref.9.0.11.nupkg.sha512",

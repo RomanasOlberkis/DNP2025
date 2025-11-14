@@ -1,0 +1,62 @@
+﻿@page "/users/create"
+@using ApiContracts
+@using BlazorApp.Services
+@using Microsoft.AspNetCore.Components
+@inject IUserService UserService
+@inject NavigationManager NavMgr
+
+<PageTitle>Create User</PageTitle>
+
+<h3>Register New User</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+
+<div class="card">
+    <div class="card-body">
+        <div class="mb-3">
+            <label class="form-label">Username:</label>
+            <input type="text" class="form-control" @bind="username" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password:</label>
+            <input type="password" class="form-control" @bind="password" />
+        </div>
+        <button class="btn btn-primary" @onclick="CreateUserAsync">Create User</button>
+        <button class="btn btn-secondary" @onclick="() => NavMgr.NavigateTo(\"/\")">Cancel</button>
+    </div>
+</div>
+
+@code {
+    private string username = string.Empty;
+    private string password = string.Empty;
+    private string errorMessage = string.Empty;
+
+    private async Task CreateUserAsync()
+    {
+        errorMessage = string.Empty;
+
+        if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+        {
+            errorMessage = "Username and password are required";
+            return;
+        }
+
+        try
+        {
+            CreateUserDto dto = new CreateUserDto
+            {
+                UserName = username,
+                Password = password
+            };
+            await UserService.AddUserAsync(dto);
+            NavMgr.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            errorMessage = $"Error creating user: {e.Message}";
+        }
+    }
+}

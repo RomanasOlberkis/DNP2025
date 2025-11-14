@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mrd3J/HvJpA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Client\\BlazorApp\\BlazorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.0\\microsoft.aspnetcore.app.internal.assets.10.0.0.nupkg.sha512",
+    "C:\\Users\\roman\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\10.0.0\\microsoft.aspnetcore.components.authorization.10.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.AspNetCore.Components.Authorization will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Client\\BlazorApp\\BlazorApp.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Client\\BlazorApp\\BlazorApp.csproj",
+      "libraryId": "Microsoft.AspNetCore.Components.Authorization",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
