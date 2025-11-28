@@ -26,9 +26,9 @@
                     </NavLink>
                 </div>
                 <div class="nav-item px-3">
-                    <a class="nav-link" href="#" @onclick="LogoutAsync" @onclick:preventDefault>
+                    <button class="nav-link btn btn-link" @onclick="LogoutAsync">
                         <span class="bi bi-box-arrow-right-nav-menu" aria-hidden="true"></span> Logout (@context.User.Identity!.Name)
-                    </a>
+                    </button>
                 </div>
             </Authorized>
             <NotAuthorized>

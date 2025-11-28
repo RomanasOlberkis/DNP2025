@@ -1,0 +1,176 @@
+﻿@page "/posts/{Id:int}"
+@using ApiContracts
+@using BlazorApp.Services
+@using System.Security.Claims
+@inject IPostService PostService
+@inject ICommentService CommentService
+@inject NavigationManager NavMgr
+
+<PageTitle>@(post?.Title ?? "Post")</PageTitle>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger">@errorMessage</div>
+}
+
+@if (post == null)
+{
+    <p>Loading post...</p>
+}
+else
+{
+    <div class="card mb-3">
+        <div class="card-header">
+            <h2>@post.Title</h2>
+            <small class="text-muted">by @post.UserName</small>
+        </div>
+        <div class="card-body">
+            <p>@post.Body</p>
+        </div>
+    </div>
+
+    <h4>Comments</h4>
+
+    @if (comments == null)
+    {
+        <p>Loading comments...</p>
+    }
+    else if (!comments.Any())
+    {
+        <p>No comments yet. Be the first to comment!</p>
+    }
+    else
+    {
+        <div class="list-group mb-3">
+            @foreach (var comment in comments)
+            {
+                <div class="list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <small class="text-muted">@comment.UserName</small>
+                    </div>
+                    <p class="mb-1">@comment.Body</p>
+                </div>
+            }
+        </div>
+    }
+
+    <AuthorizeView>
+        <Authorized>
+            <div class="card">
+                <div class="card-header">Add Comment</div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Comment:</label>
+                        <textarea class="form-control" rows="3" @bind="commentBody"></textarea>
+                    </div>
+                    <button class="btn btn-primary" @onclick="AddCommentAsync">Add Comment</button>
+                </div>
+            </div>
+        </Authorized>
+        <NotAuthorized>
+            <div class="alert alert-info">
+                <a href="/login">Login</a> to add comments
+            </div>
+        </NotAuthorized>
+    </AuthorizeView>
+}
+
+<div class="mt-3">
+    <button class="btn btn-secondary" @onclick="GoToHome">Back to Posts</button>
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    [CascadingParameter]
+    public Task<AuthenticationState>? AuthState { get; set; }
+
+    private PostDto? post;
+    private IEnumerable<CommentDto>? comments;
+    private string errorMessage = string.Empty;
+    private int userId;
+    private string commentBody = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadPostAsync();
+        await LoadCommentsAsync();
+        await LoadUserIdAsync();
+    }
+
+    private async Task LoadUserIdAsync()
+    {
+        if (AuthState != null)
+        {
+            var authState = await AuthState;
+            var user = authState.User;
+            
+            if (user.Identity?.IsAuthenticated == true)
+            {
+                var userIdClaim = user.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim != null)
+                {
+                    userId = int.Parse(userIdClaim.Value);
+                }
+            }
+        }
+    }
+
+    private async Task LoadPostAsync()
+    {
+        try
+        {
+            post = await PostService.GetPostAsync(Id);
+        }
+        catch (Exception e)
+        {
+            errorMessage = $"Error loading post: {e.Message}";
+        }
+    }
+
+    private async Task LoadCommentsAsync()
+    {
+        try
+        {
+            comments = await PostService.GetPostCommentsAsync(Id);
+        }
+        catch (Exception e)
+        {
+            errorMessage = $"Error loading comments: {e.Message}";
+        }
+    }
+
+    private async Task AddCommentAsync()
+    {
+        errorMessage = string.Empty;
+
+        if (string.IsNullOrWhiteSpace(commentBody))
+        {
+            errorMessage = "Comment cannot be empty";
+            return;
+        }
+
+        try
+        {
+            CreateCommentDto dto = new CreateCommentDto
+            {
+                Body = commentBody,
+                UserId = userId,
+                PostId = Id
+            };
+            await CommentService.AddCommentAsync(dto);
+            commentBody = string.Empty;
+            await LoadCommentsAsync();
+        }
+        catch (Exception e)
+        {
+            errorMessage = $"Error adding comment: {e.Message}";
+        }
+    }
+
+    private void GoToHome()
+    {
+        NavMgr.NavigateTo("/");
+    }
+}

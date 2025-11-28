@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebAPI\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebAPI\\WebApi.csproj",
       "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -208,8 +208,8 @@
             "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {
               "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj"
             },
-            "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
-              "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
+            "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
             }
           }
         }

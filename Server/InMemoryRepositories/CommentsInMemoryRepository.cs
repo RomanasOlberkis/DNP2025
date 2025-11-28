@@ -1,3 +1,4 @@
+using System;
 using Entities;
 using RepositoryContracts;
 
@@ -6,11 +7,22 @@ namespace InMemoryRepositories;
 public class CommentInMemoryRepository : ICommentRepository
 {
     private readonly List<Comment> comments = new();
-
     public CommentInMemoryRepository()
     {
-        comments.Add(new Comment { Id = 1, Body = "Big L", UserId = 2, PostId = 1 });
-        comments.Add(new Comment { Id = 2, Body = "W Moment", UserId = 1, PostId = 2 });
+        // Create instances using reflection since Comment's constructor is non-public
+        Comment c1 = (Comment)Activator.CreateInstance(typeof(Comment), true);
+        c1.Id = 1;
+        c1.Body = "Big L";
+        c1.UserId = 2;
+        c1.PostId = 1;
+        comments.Add(c1);
+
+        Comment c2 = (Comment)Activator.CreateInstance(typeof(Comment), true);
+        c2.Id = 2;
+        c2.Body = "W Moment";
+        c2.UserId = 1;
+        c2.PostId = 2;
+        comments.Add(c2);
     }
 
     public Task<Comment> AddAsync(Comment comment)

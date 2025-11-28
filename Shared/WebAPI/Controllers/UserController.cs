@@ -2,6 +2,7 @@ using ApiContracts;
 using Entities;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryContracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebAPI.Controllers;
 
@@ -17,43 +18,45 @@ public class UsersController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<UserDto>> AddUser([FromBody] CreateUserDto request)
+public async Task<ActionResult<UserDto>> AddUser([FromBody] CreateUserDto request)
+{
+    bool exists = await userRepo.GetMany()
+        .AnyAsync(u => u.UserName.Equals(request.UserName, StringComparison.OrdinalIgnoreCase));
+    
+    if (exists)
     {
-        await VerifyUserNameIsAvailableAsync(request.UserName);
-        
-        User user = new User
-        {
-            UserName = request.UserName,
-            Password = request.Password
-        };
-        User created = await userRepo.AddAsync(user);
-        
-        UserDto dto = new UserDto
-        {
-            Id = created.Id,
-            UserName = created.UserName
-        };
-        return Created($"/users/{dto.Id}", dto);
+        return BadRequest($"Username '{request.UserName}' is already taken");
+    }
+    
+    User user = new User(request.UserName, request.Password);
+    User created = await userRepo.AddAsync(user);
+    
+    UserDto dto = new UserDto
+    {
+        Id = created.Id,
+        UserName = created.UserName
+    };
+    return Created($"/users/{dto.Id}", dto);
+}
+
+  [HttpGet]
+public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers([FromQuery] string? username)
+{
+    var users = userRepo.GetMany();
+    
+    if (!string.IsNullOrEmpty(username))
+    {
+        users = users.Where(u => u.UserName.Contains(username, StringComparison.OrdinalIgnoreCase));
     }
 
-    [HttpGet]
-    public ActionResult<IEnumerable<UserDto>> GetUsers([FromQuery] string? username)
+    var userDtos = await users.Select(u => new UserDto
     {
-        var users = userRepo.GetMany();
-        
-        if (!string.IsNullOrEmpty(username))
-        {
-            users = users.Where(u => u.UserName.Contains(username, StringComparison.OrdinalIgnoreCase));
-        }
+        Id = u.Id,
+        UserName = u.UserName
+    }).ToListAsync();
 
-        var userDtos = users.Select(u => new UserDto
-        {
-            Id = u.Id,
-            UserName = u.UserName
-        }).ToList();
-
-        return Ok(userDtos);
-    }
+    return Ok(userDtos);
+}
 
     [HttpGet("{id}")]
     public async Task<ActionResult<UserDto>> GetUser(int id)

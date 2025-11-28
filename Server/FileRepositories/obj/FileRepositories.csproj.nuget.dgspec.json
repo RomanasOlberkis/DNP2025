@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {}
+    "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {}
   },
   "projects": {
     "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {
+    "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj",
+        "projectUniqueName": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj",
         "projectName": "FileRepositories",
-        "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj",
+        "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj",
         "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\obj\\",
+        "outputPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -102,8 +102,8 @@
               "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
-                "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
+              "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+                "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
               }
             }
           }
@@ -163,14 +163,14 @@
         }
       }
     },
-    "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+    "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectUniqueName": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
         "projectName": "RepositoryContracts",
-        "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
+        "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj",
         "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\obj\\",
+        "outputPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"

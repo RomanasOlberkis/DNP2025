@@ -115,11 +115,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj",
+      "projectUniqueName": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj",
       "projectName": "CLI",
-      "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj",
+      "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\CLI\\CLI.csproj",
       "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\CLI\\obj\\",
+      "outputPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\CLI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -134,14 +134,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
+            "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj": {
+              "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\Entities\\Entities.csproj"
             },
-            "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {
-              "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj"
+            "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj": {
+              "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\FileRepositories\\FileRepositories.csproj"
             },
-            "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
-              "projectPath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
+            "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj": {
+              "projectPath": "c:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\RepositoryContracts\\RepositoryContracts.csproj"
             }
           }
         }

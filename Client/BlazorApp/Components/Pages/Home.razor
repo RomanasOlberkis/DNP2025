@@ -12,8 +12,7 @@
     <Authorized>
         <div class="alert alert-info">
             Welcome, @context.User.Identity!.Name!
-
-</div>
+        </div>
     </Authorized>
     <NotAuthorized>
         <div class="alert alert-warning">
@@ -57,11 +56,11 @@ else
 <div class="mt-3">
     <AuthorizeView>
         <Authorized>
-            <button class="btn btn-primary" @onclick="() => NavMgr.NavigateTo(\"/posts/create\")">Create New Post</button>
+            <button class="btn btn-primary" @onclick="GoToCreatePost">Create New Post</button>
         </Authorized>
         <NotAuthorized>
-            <button class="btn btn-secondary" @onclick="() => NavMgr.NavigateTo(\"/users/create\")">Register User</button>
-            <button class="btn btn-primary" @onclick="() => NavMgr.NavigateTo(\"/login\")">Login</button>
+            <button class="btn btn-secondary" @onclick="GoToRegister">Register User</button>
+            <button class="btn btn-primary" @onclick="GoToLogin">Login</button>
         </NotAuthorized>
     </AuthorizeView>
 </div>
@@ -96,5 +95,20 @@ else
         {
             errorMessage = $"Error loading posts: {e.Message}";
         }
+    }
+
+    private void GoToCreatePost()
+    {
+        NavMgr.NavigateTo("/posts/create");
+    }
+
+    private void GoToRegister()
+    {
+        NavMgr.NavigateTo("/users/create");
+    }
+
+    private void GoToLogin()
+    {
+        NavMgr.NavigateTo("/login");
     }
 }

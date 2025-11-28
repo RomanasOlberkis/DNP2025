@@ -1,4 +1,4 @@
-using RepositoryContracts;
+/*using RepositoryContracts;
 
 namespace CLI.UI;
 
@@ -61,4 +61,4 @@ public class CliApp
         ManageCommentsView view = new ManageCommentsView(commentRepo, postRepo, userRepo);
         await view.ShowAsync();
     }
-}
+}*/

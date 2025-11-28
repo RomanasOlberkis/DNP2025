@@ -2,6 +2,7 @@ using ApiContracts;
 using Entities;
 using Microsoft.AspNetCore.Mvc;
 using RepositoryContracts;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebAPI.Controllers;
 
@@ -41,12 +42,7 @@ public class CommentsController : ControllerBase
             return BadRequest($"Post with ID {request.PostId} not found");
         }
 
-        Comment comment = new Comment
-        {
-            Body = request.Body,
-            UserId = request.UserId,
-            PostId = request.PostId
-        };
+    Comment comment = new Comment(request.Body, request.UserId, request.PostId);
         Comment created = await commentRepo.AddAsync(comment);
         User user = await userRepo.GetSingleAsync(created.UserId);
 
@@ -61,63 +57,40 @@ public class CommentsController : ControllerBase
         return Created($"/comments/{dto.Id}", dto);
     }
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<CommentDto>>> GetComments(
-        [FromQuery] int? userId,
-        [FromQuery] string? username,
-        [FromQuery] int? postId)
+[HttpGet]
+public async Task<ActionResult<IEnumerable<CommentDto>>> GetComments(
+    [FromQuery] int? userId,
+    [FromQuery] string? username,
+    [FromQuery] int? postId)
+{
+    IQueryable<Comment> comments = commentRepo.GetMany().Include(c => c.User);
+
+    if (userId.HasValue)
     {
-        var comments = commentRepo.GetMany();
-
-        if (userId.HasValue)
-        {
-            comments = comments.Where(c => c.UserId == userId.Value);
-        }
-
-        if (postId.HasValue)
-        {
-            comments = comments.Where(c => c.PostId == postId.Value);
-        }
-
-        var commentList = comments.ToList();
-        var commentDtos = new List<CommentDto>();
-
-        foreach (var comment in commentList)
-        {
-            try
-            {
-                User user = await userRepo.GetSingleAsync(comment.UserId);
-                
-                if (!string.IsNullOrEmpty(username) && 
-                    !user.UserName.Contains(username, StringComparison.OrdinalIgnoreCase))
-                {
-                    continue;
-                }
-
-                commentDtos.Add(new CommentDto
-                {
-                    Id = comment.Id,
-                    Body = comment.Body,
-                    UserId = comment.UserId,
-                    UserName = user.UserName,
-                    PostId = comment.PostId
-                });
-            }
-            catch
-            {
-                commentDtos.Add(new CommentDto
-                {
-                    Id = comment.Id,
-                    Body = comment.Body,
-                    UserId = comment.UserId,
-                    UserName = "Unknown",
-                    PostId = comment.PostId
-                });
-            }
-        }
-
-        return Ok(commentDtos);
+        comments = comments.Where(c => c.UserId == userId.Value);
     }
+
+    if (postId.HasValue)
+    {
+        comments = comments.Where(c => c.PostId == postId.Value);
+    }
+
+    if (!string.IsNullOrEmpty(username))
+    {
+        comments = comments.Where(c => c.User.UserName.Contains(username, StringComparison.OrdinalIgnoreCase));
+    }
+
+    var commentDtos = await comments.Select(c => new CommentDto
+    {
+        Id = c.Id,
+        Body = c.Body,
+        UserId = c.UserId,
+        UserName = c.User.UserName,
+        PostId = c.PostId
+    }).ToListAsync();
+
+    return Ok(commentDtos);
+}
 
     [HttpGet("{id}")]
     public async Task<ActionResult<CommentDto>> GetComment(int id)

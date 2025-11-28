@@ -3,13 +3,15 @@ using RepositoryContracts;
 
 namespace CLI.UI;
 
-public class ManagePostsView
+public class ManagePostView
 {
+    private readonly ICommentRepository commentRepo;
     private readonly IPostRepository postRepo;
     private readonly IUserRepository userRepo;
 
-    public ManagePostsView(IPostRepository postRepo, IUserRepository userRepo)
+    public ManagePostView(ICommentRepository commentRepo, IPostRepository postRepo, IUserRepository userRepo)
     {
+        this.commentRepo = commentRepo;
         this.postRepo = postRepo;
         this.userRepo = userRepo;
     }
@@ -18,30 +20,28 @@ public class ManagePostsView
     {
         while (true)
         {
-            Console.WriteLine("write 1 to create a new post");
-            Console.WriteLine("write 2 to see all the posts");
-            Console.WriteLine("write 3 to update specific post info");
-            Console.WriteLine("write 4 to update a specific user");
-            Console.WriteLine("write 5 to delete a post");
-            Console.WriteLine("write 0 to go back to function selection");
+            Console.WriteLine("\n=== Comment Management ===");
+            Console.WriteLine("1. Add Comment");
+            Console.WriteLine("2. List Comments");
+            Console.WriteLine("3. Update Comment");
+            Console.WriteLine("4. Delete Comment");
+            Console.WriteLine("0. Back");
+            Console.Write("Select option: ");
 
             string? choice = Console.ReadLine();
             switch (choice)
             {
                 case "1":
-                    await CreatePostAsync();
+                    await AddCommentAsync();
                     break;
                 case "2":
-                    await ListPostsAsync();
+                    await ListCommentsAsync();
                     break;
                 case "3":
-                    await ViewPostAsync();
+                    await UpdateCommentAsync();
                     break;
                 case "4":
-                    await UpdatePostAsync();
-                    break;
-                case "5":
-                    await DeletePostAsync();
+                    await DeleteCommentAsync();
                     break;
                 case "0":
                     return;
@@ -52,8 +52,15 @@ public class ManagePostsView
         }
     }
 
-    private async Task CreatePostAsync()
+    private async Task AddCommentAsync()
     {
+        Console.Write("Post ID: ");
+        if (!int.TryParse(Console.ReadLine(), out int postId))
+        {
+            Console.WriteLine("Invalid post ID");
+            return;
+        }
+
         Console.Write("User ID: ");
         if (!int.TryParse(Console.ReadLine(), out int userId))
         {
@@ -61,35 +68,51 @@ public class ManagePostsView
             return;
         }
 
-        Console.Write("Title: ");
-        string? title = Console.ReadLine();
-        Console.Write("Body: ");
+        Console.Write("Comment: ");
         string? body = Console.ReadLine();
 
-        if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(body))
+        if (string.IsNullOrEmpty(body))
         {
-            Console.WriteLine("Title and body cannot be empty");
+            Console.WriteLine("Comment cannot be empty");
             return;
         }
 
-        Post post = new Post { Title = title, Body = body, UserId = userId };
-        Post created = await postRepo.AddAsync(post);
-        Console.WriteLine($"Post created with ID: {created.Id}");
+        Comment comment = new Comment { Body = body, UserId = userId, PostId = postId };
+        Comment created = await commentRepo.AddAsync(comment);
+        Console.WriteLine($"Comment created with ID: {created.Id}");
     }
 
-    private async Task ListPostsAsync()
+    private async Task ListCommentsAsync()
     {
-        var posts = postRepo.GetMany().ToList();
-        Console.WriteLine("\n=== Posts ===");
-        foreach (var post in posts)
+        Console.Write("Filter by Post ID (leave empty for all): ");
+        string? input = Console.ReadLine();
+        
+        var comments = commentRepo.GetMany();
+        
+        if (!string.IsNullOrEmpty(input) && int.TryParse(input, out int postId))
         {
-            Console.WriteLine($"[{post.Id}] {post.Title}");
+            comments = comments.Where(c => c.PostId == postId);
+        }
+
+        var commentList = comments.ToList();
+        Console.WriteLine("\n=== Comments ===");
+        foreach (var comment in commentList)
+        {
+            try
+            {
+                User user = await userRepo.GetSingleAsync(comment.UserId);
+                Console.WriteLine($"[{comment.Id}] {user.UserName}: {comment.Body}");
+            }
+            catch
+            {
+                Console.WriteLine($"[{comment.Id}] Unknown user: {comment.Body}");
+            }
         }
     }
 
-    private async Task ViewPostAsync()
+    private async Task UpdateCommentAsync()
     {
-        Console.Write("Post ID: ");
+        Console.Write("Comment ID to update: ");
         if (!int.TryParse(Console.ReadLine(), out int id))
         {
             Console.WriteLine("Invalid ID");
@@ -98,42 +121,14 @@ public class ManagePostsView
 
         try
         {
-            Post post = await postRepo.GetSingleAsync(id);
-            User user = await userRepo.GetSingleAsync(post.UserId);
-            
-            Console.WriteLine($"\nPost ID: #{post.Id}");
-            Console.WriteLine($"Title: {post.Title}");
-            Console.WriteLine($"Author: {user.UserName}");
-            Console.WriteLine($"Body: {post.Body}");
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine($"Error: {e.Message}");
-        }
-    }
-
-    private async Task UpdatePostAsync()
-    {
-        Console.Write("Post ID to update: ");
-        if (!int.TryParse(Console.ReadLine(), out int id))
-        {
-            Console.WriteLine("Invalid ID");
-            return;
-        }
-
-        try
-        {
-            Post post = await postRepo.GetSingleAsync(id);
-            Console.Write($"New title (current: {post.Title}): ");
-            string? title = Console.ReadLine();
-            Console.Write($"New body (current: {post.Body}): ");
+            Comment comment = await commentRepo.GetSingleAsync(id);
+            Console.Write($"New comment (current: {comment.Body}): ");
             string? body = Console.ReadLine();
 
-            if (!string.IsNullOrEmpty(title)) post.Title = title;
-            if (!string.IsNullOrEmpty(body)) post.Body = body;
+            if (!string.IsNullOrEmpty(body)) comment.Body = body;
 
-            await postRepo.UpdateAsync(post);
-            Console.WriteLine("Post updated");
+            await commentRepo.UpdateAsync(comment);
+            Console.WriteLine("Comment updated");
         }
         catch (Exception e)
         {
@@ -141,9 +136,9 @@ public class ManagePostsView
         }
     }
 
-    private async Task DeletePostAsync()
+    private async Task DeleteCommentAsync()
     {
-        Console.Write("Post ID to delete: ");
+        Console.Write("Comment ID to delete: ");
         if (!int.TryParse(Console.ReadLine(), out int id))
         {
             Console.WriteLine("Invalid ID");
@@ -152,8 +147,8 @@ public class ManagePostsView
 
         try
         {
-            await postRepo.DeleteAsync(id);
-            Console.WriteLine("Post has been deleted");
+            await commentRepo.DeleteAsync(id);
+            Console.WriteLine("Comment deleted");
         }
         catch (Exception e)
         {

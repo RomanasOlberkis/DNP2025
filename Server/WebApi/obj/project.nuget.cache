@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OPb3aUu/Hfc=",
+  "dgSpecHash": "eG1OLfEbP10=",
   "success": true,
-  "projectFilePath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\roman\\Documents\\DNP\\Assingment\\Server\\WebAPI\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.0\\microsoft.aspnetcore.openapi.10.0.0.nupkg.sha512",
     "C:\\Users\\roman\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",

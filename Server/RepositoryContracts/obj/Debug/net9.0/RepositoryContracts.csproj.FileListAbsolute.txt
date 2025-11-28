@@ -4,18 +4,18 @@ c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\RepositoryContra
 c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.csproj.CoreCompileInputs.cache
 c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.sourcelink.json
 C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.deps.json
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.pdb
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\Entities.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\Entities.pdb
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.csproj.AssemblyReference.cache
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.AssemblyInfoInputs.cache
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.AssemblyInfo.cs
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.csproj.CoreCompileInputs.cache
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.sourcelink.json
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.dll
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\RepositoryContracts.pdb
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\Entities.dll
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\bin\Debug\net9.0\Entities.pdb
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.csproj.AssemblyReference.cache
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.AssemblyInfoInputs.cache
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.AssemblyInfo.cs
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.csproj.CoreCompileInputs.cache
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.sourcelink.json
 C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\Reposito.28D4BA81.Up2Date
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\refint\RepositoryContracts.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.pdb
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.dll
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\refint\RepositoryContracts.dll
+C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\RepositoryContracts.pdb
 C:\Users\roman\Documents\DNP\Assingment\Server\RepositoryContracts\obj\Debug\net9.0\ref\RepositoryContracts.dll

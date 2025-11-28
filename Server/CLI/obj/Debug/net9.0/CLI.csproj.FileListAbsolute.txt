@@ -3,27 +3,9 @@ c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\CLI\obj\Debug\ne
 c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.AssemblyInfo.cs
 c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.csproj.CoreCompileInputs.cache
 c:\Users\roman\OneDrive - ViaUC\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.sourcelink.json
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\CLI.exe
-C:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\CLI.deps.json
-C:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\CLI.runtimeconfig.json
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\CLI.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\CLI.pdb
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\Newtonsoft.Json.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\Entities.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\FileRepositories.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\RepositoryContracts.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\Entities.pdb
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\FileRepositories.pdb
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\bin\Debug\net9.0\RepositoryContracts.pdb
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.csproj.AssemblyReference.cache
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.GeneratedMSBuildEditorConfig.editorconfig
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.AssemblyInfoInputs.cache
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.AssemblyInfo.cs
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.csproj.CoreCompileInputs.cache
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.sourcelink.json
-C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.csproj.Up2Date
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\refint\CLI.dll
-c:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.pdb
-C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.genruntimeconfig.cache
-C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\ref\CLI.dll
+C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.csproj.AssemblyReference.cache
+C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.AssemblyInfoInputs.cache
+C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.AssemblyInfo.cs
+C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.csproj.CoreCompileInputs.cache
+C:\Users\roman\Documents\DNP\Assingment\Server\CLI\obj\Debug\net9.0\CLI.sourcelink.json

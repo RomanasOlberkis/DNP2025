@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Entities;
 using RepositoryContracts;
 
@@ -6,11 +10,22 @@ namespace InMemoryRepositories;
 public class PostInMemoryRepository : IPostRepository
 {
     private readonly List<Post> posts = new();
-
     public PostInMemoryRepository()
     {
-        posts.Add(new Post { Id = 1, Title = "Help needed", Body = "All these squares make a circle", UserId = 1 });
-        posts.Add(new Post { Id = 2, Title = "Am I cooked?", Body = "fortnite, big bucks, Big L small W", UserId = 2 });
+        // Use reflection to create Post instances when the parameterless constructor is not public
+        var p1 = (Post)Activator.CreateInstance(typeof(Post), nonPublic: true)!;
+        p1.Id = 1;
+        p1.Title = "Help needed";
+        p1.Body = "All these squares make a circle";
+        p1.UserId = 1;
+        posts.Add(p1);
+
+        var p2 = (Post)Activator.CreateInstance(typeof(Post), nonPublic: true)!;
+        p2.Id = 2;
+        p2.Title = "Am I cooked?";
+        p2.Body = "fortnite, big bucks, Big L small W";
+        p2.UserId = 2;
+        posts.Add(p2);
     }
 
     public Task<Post> AddAsync(Post post)
